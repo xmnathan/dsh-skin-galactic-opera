@@ -123,14 +123,6 @@ dsh-skin-galactic-opera/
 - `lib/index.js`: host-side no-op entry.
 - `lib/client.js`: browser-side theme, decoration, and interaction implementation.
 
-## GitHub topics
-
-Recommended repository topics:
-
-```text
-dsh deepseek-harness dsh-plugin dsh-skin dsh-theme space-opera sci-fi dark-theme hud web-ui
-```
-
 ## License
 
 MIT
