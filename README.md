@@ -24,7 +24,7 @@ This package does not include or recreate any official franchise logos, characte
   - Subtle mouse parallax.
   - Click energy pulse.
   - Hover energy outlines on buttons, inputs, messages, and code blocks.
-  - Bottom telemetry/status information, such as token and usage data, is presented as a bottom-right sci-fi panel when detected.
+  - Bottom telemetry/status information, such as token and usage data, is presented as a narrow vertical bottom-right sci-fi panel when detected.
   - Scanner target dot projected from the pointer direction relative to the viewport center; the target lights only when the scanner sweep passes it.
   - Automatic hyperspace burst after submitting a new instruction or message.
 - Respects `prefers-reduced-motion: reduce` by disabling major animations.
