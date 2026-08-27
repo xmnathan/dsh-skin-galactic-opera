@@ -1,0 +1,5 @@
+# Adds the Galactic Opera browser skin to a DSH web profile.
+# This package is both a profile bundle and the inserted client plugin row.
+- insert:
+    - id: dsh-skin-galactic-opera
+      name: dsh-skin-galactic-opera

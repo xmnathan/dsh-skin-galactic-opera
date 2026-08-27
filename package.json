@@ -1,0 +1,57 @@
+{
+  "name": "dsh-skin-galactic-opera",
+  "version": "0.1.0",
+  "description": "Unofficial cinematic space-opera dark skin bundle for the DSH Web GUI.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node --check lib/client.js",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-skin",
+    "dsh-theme",
+    "theme",
+    "skin",
+    "web",
+    "web-ui",
+    "dark-theme",
+    "space",
+    "space-opera",
+    "sci-fi",
+    "hud"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": true,
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "platform": "web"
+    }
+  }
+}
