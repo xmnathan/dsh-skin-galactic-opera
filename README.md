@@ -32,10 +32,22 @@ This package does not include or recreate any official franchise logos, characte
 
 ### From npm
 
-After this package is published to npm:
+Recommended for most users:
 
 ```powershell
 dsh plugin --profile web add dsh-skin-galactic-opera
+```
+
+npm package page:
+
+```text
+https://www.npmjs.com/package/dsh-skin-galactic-opera
+```
+
+### From GitHub
+
+```powershell
+dsh plugin --profile web add https://github.com/xmnathan/dsh-skin-galactic-opera.git
 ```
 
 ### From a local checkout
