@@ -2,6 +2,13 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.2 - 2026-08-27
+
+### Fixed
+
+- Keeps model/context popovers above the skin overlay layer.
+- Prevents the telemetry mirror from treating input-bar buttons, popovers, listboxes, and menus as telemetry sources.
+
 ## 0.1.1 - 2026-08-27
 
 ### Added
