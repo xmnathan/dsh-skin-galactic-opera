@@ -24,10 +24,24 @@ This package does not include or recreate any official franchise logos, characte
   - Subtle mouse parallax.
   - Click energy pulse.
   - Hover energy outlines on buttons, inputs, messages, and code blocks.
-  - Bottom telemetry/status information, such as token, usage, round, and step data, is copied into a complete multi-row bottom-right sci-fi panel when detected.
+  - Bottom telemetry/status information is mirrored into a fixed bottom-right sci-fi panel.
   - Scanner target dot projected from the pointer direction relative to the viewport center; the target lights only when the scanner sweep passes it.
   - Automatic hyperspace burst after submitting a new instruction or message.
 - Respects `prefers-reduced-motion: reduce` by disabling major animations.
+
+## Telemetry panel
+
+When DSH Web exposes bottom status/usage data, the skin keeps the original UI layout in place and mirrors the detected global telemetry into a non-interactive bottom-right HUD panel. The panel is intended to show a consistent five-line status block:
+
+```text
+312 轮 · 8732 步
+LLM 2253m42s · 工具调用 972m8s
+首 token 平均 10.5s · 58 tok/s
+缓存命中 97%
+输入 1369M tok · 输出 2.5M tok
+```
+
+The skin treats each original pipe-separated bottom-bar segment as a complete information block, so combined items such as `首 token 平均 ... · ... tok/s` and `输入 ... · 输出 ...` remain intact. It also filters nearby message-level timing text and settings/menu text so the panel stays focused on global session telemetry.
 
 ## Installation
 

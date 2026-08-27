@@ -2,6 +2,17 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.1 - 2026-08-27
+
+### Added
+
+- Bottom-right HUD telemetry panel that mirrors global DSH session status in a fixed five-line layout: rounds/steps, LLM/tool time, first-token average and throughput, cache hit rate, and input/output token usage.
+
+### Changed
+
+- Preserves pipe-separated telemetry segments as complete information blocks.
+- Filters nearby message-level timing and settings/menu text from the telemetry panel.
+
 ## 0.1.0 - 2026-08-27
 
 Initial public package version.
