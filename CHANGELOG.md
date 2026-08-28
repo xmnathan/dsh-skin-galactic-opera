@@ -2,6 +2,12 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.4 - 2026-08-28
+
+### Fixed
+
+- Restores the top-right satellite's original 0.1.2 elliptical orbit behavior by excluding satellite and orbit animations from typing low-distraction pause rules.
+
 ## 0.1.3 - 2026-08-27
 
 ### Added
