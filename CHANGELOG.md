@@ -2,6 +2,16 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.3 - 2026-08-27
+
+### Added
+
+- Triangle collapse/expand control that complements the bottom-right telemetry panel corner cut and remembers its state.
+
+### Changed
+
+- Reduces visual and JavaScript activity while typing by pausing high-motion skin effects, scanner updates, pointer parallax, click pulses on editable controls, and telemetry rescans during active input.
+
 ## 0.1.2 - 2026-08-27
 
 ### Fixed
