@@ -2,6 +2,19 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.6 - 2026-08-28
+
+### Changed
+
+- Further reduces telemetry overhead by using cached candidate geometry, adding a bounded full-rescan TTL, increasing update debounce, and avoiding observer array allocations.
+- Refines telemetry text extraction so hot-path probing uses lightweight text reads while rendered output preserves native visual spacing.
+- Uses pointer movement distance thresholds for parallax updates instead of fixed time throttling.
+- Reuses fixed telemetry row nodes and disables the telemetry backdrop blur while typing.
+
+### Fixed
+
+- Prevents occasional telemetry panel disappearance during full rescans by temporarily making hidden native telemetry sources discoverable to `elementsFromPoint`.
+
 ## 0.1.5 - 2026-08-28
 
 ### Added
