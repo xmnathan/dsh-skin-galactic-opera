@@ -2,6 +2,14 @@
   "name": "dsh-skin-galactic-opera",
   "version": "0.1.4",
   "description": "Unofficial cinematic space-opera dark skin bundle for the DSH Web GUI.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmnathan/dsh-skin-galactic-opera.git"
+  },
+  "homepage": "https://github.com/xmnathan/dsh-skin-galactic-opera#readme",
+  "bugs": {
+    "url": "https://github.com/xmnathan/dsh-skin-galactic-opera/issues"
+  },
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -19,8 +27,9 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "check": "node --check lib/client.js",
-    "pack:dry": "npm pack --dry-run"
+    "check": "node --check lib/client.js && node --check lib/index.js",
+    "pack:dry": "npm pack --dry-run",
+    "prepublishOnly": "npm run check"
   },
   "keywords": [
     "dsh",
