@@ -2,6 +2,26 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.5 - 2026-08-28
+
+### Added
+
+- Scanner target now double-flashes at the clicked page position projected into the bottom-left scanner disk.
+- Package metadata for repository, homepage, and issue reporting.
+
+### Changed
+
+- Optimizes telemetry rescan scheduling by ignoring skin-owned DOM mutations and reusing valid cached telemetry sources.
+- Replaces the scanner target's continuous sweep polling with click-triggered pings.
+- Caches the reduced-motion media query and tightens plugin-specific global state class names.
+- Expands JavaScript syntax checks to include both client and host entries and runs them before publishing.
+
+### Fixed
+
+- Improves contenteditable detection, including empty and plaintext-only contenteditable controls.
+- Prevents hidden telemetry source elements from intercepting pointer events.
+- Narrows scrollbar styling to avoid a global universal selector.
+
 ## 0.1.4 - 2026-08-28
 
 ### Fixed
