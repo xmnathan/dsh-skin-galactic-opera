@@ -1,5 +1,7 @@
 # dsh-skin-galactic-opera
 
+<p align="center">DSH Web GUI 非官方 太空歌剧风 暗色 动态 皮肤插件</p>
+
 <p align="center">
   <a href="#english">English</a> · <a href="#简体中文">简体中文</a>
 </p>
