@@ -2,6 +2,21 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.8 - 2026-09-03
+
+### Added
+
+- Adds a subtle black-hole infall effect using a lightweight pseudo-element particle layer and a send-time pull animation.
+
+### Changed
+
+- Reduces idle black-hole animation cost by slowing the new infall layer, shrinking its paint area, lowering opacity, and removing animated filters.
+- Keeps telemetry panel chrome clipped through the same cutout layer in both typing and idle states.
+
+### Fixed
+
+- Fixes telemetry panel cutout artifacts that could show a filled or rectangular top-left corner while typing.
+
 ## 0.1.7 - 2026-09-03
 
 ### Changed
