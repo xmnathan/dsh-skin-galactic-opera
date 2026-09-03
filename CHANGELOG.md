@@ -2,6 +2,18 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.7 - 2026-09-03
+
+### Changed
+
+- Moves the decorative visual layer into Shadow DOM to isolate scanner, planet, pulse, and black-hole geometry from DSH host style regressions.
+- Keeps the input-mode black hole visually stable while still reducing high-motion distraction elsewhere.
+- Aligns the hyperspace burst effect to the black-hole center after Shadow DOM isolation.
+
+### Fixed
+
+- Prevents Shadow DOM container nesting from shifting the scanner disk, planet, satellite orbit, and other decorative elements toward the viewport edges.
+
 ## 0.1.6 - 2026-08-28
 
 ### Changed
