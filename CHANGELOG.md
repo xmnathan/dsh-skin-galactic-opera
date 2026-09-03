@@ -2,6 +2,17 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.1.9 - 2026-09-03
+
+### Changed
+
+- Replaces the README with separate English and Simplified Chinese sections linked from a language switcher at the top.
+- Refreshes the bottom-right telemetry HUD promptly when switching conversations or navigating between sessions.
+
+### Fixed
+
+- Keeps navigation-triggered telemetry refreshes active even when the instruction input still has focus.
+
 ## 0.1.8 - 2026-09-03
 
 ### Added
