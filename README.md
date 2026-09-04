@@ -41,6 +41,19 @@ It uses generic sci-fi visual language: deep-space backgrounds, neon HUD chrome,
 - Uses Shadow DOM for the decorative layer to reduce interference from host application styles.
 - Respects `prefers-reduced-motion: reduce` by disabling major animations.
 
+### Compatibility
+
+Recommended DSH version: **`0.1.0-rc.7` or newer**.
+
+Known incompatible versions:
+
+- `0.0.1-rc.1`
+- `0.0.1-rc.2`
+
+These early versions of `@deepseek-ai/dsh-client-ui-theme` do not expose `theme.overrideTokens()`, which this skin uses for its token override layer.
+
+Versions from `0.0.1-rc.3` onward include the required theme APIs in static inspection, but DSH releases before `0.1.0-rc.7` are not actively tested by this package. If you are using an older DSH release, upgrade DSH first before reporting skin issues.
+
 ### Telemetry panel
 
 When DSH Web exposes bottom status/usage data, the skin keeps the original UI layout in place and mirrors the detected global telemetry into a non-interactive bottom-right HUD panel.
@@ -192,6 +205,19 @@ DSH Web GUI 的非官方电影感太空歌剧暗色皮肤插件。
   - 固定在右下角的 telemetry / 状态 HUD 面板。
 - 装饰层使用 Shadow DOM，减少宿主应用样式对行星、扫描盘、点击脉冲等几何形态的污染。
 - 遵循 `prefers-reduced-motion: reduce`，会关闭主要动画。
+
+### 兼容性
+
+推荐 DSH 版本：**`0.1.0-rc.7` 或更新版本**。
+
+已知不兼容版本：
+
+- `0.0.1-rc.1`
+- `0.0.1-rc.2`
+
+这些早期版本的 `@deepseek-ai/dsh-client-ui-theme` 不提供 `theme.overrideTokens()`，而本皮肤需要它来应用主题 token 覆盖层。
+
+从 `0.0.1-rc.3` 开始，静态检查显示已具备本插件需要的 theme API；但 `0.1.0-rc.7` 之前的 DSH 版本本包不会主动测试。如果你正在使用更早的 DSH 版本，建议先升级 DSH，再反馈皮肤兼容问题。
 
 ### Telemetry 面板
 
