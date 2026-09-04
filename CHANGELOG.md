@@ -2,6 +2,13 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.2.0 - 2026-09-04
+
+### Changed
+
+- Pauses skin animation work while the page is hidden to reduce background CPU/GPU usage.
+- Suspends telemetry scans while the page is hidden, then forces an immediate refresh plus a short follow-up when the page becomes visible again.
+
 ## 0.1.9 - 2026-09-03
 
 ### Changed
