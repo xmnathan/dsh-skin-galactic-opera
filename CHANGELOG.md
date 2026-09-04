@@ -2,6 +2,16 @@
 
 All notable changes to this package will be documented in this file.
 
+## 0.2.1 - 2026-09-04
+
+### Changed
+
+- Documents the recommended DSH compatibility range in both English and Simplified Chinese README sections.
+
+### Fixed
+
+- Aligns click pulse and scanner target effects with the clicked position after Shadow DOM decor isolation.
+
 ## 0.2.0 - 2026-09-04
 
 ### Changed
